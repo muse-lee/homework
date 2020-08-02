@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>salty_taste</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .card {
+            height: 300px;
+            padding-top: 20px;
+            margin: auto;
+            position: center;
+        }
+
+        .text {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        h2, h5 {
+            display: inline;
+        }
+
+        h2 {
+            font-weight: bold
+        }
+
+        h2, p {
+            padding-top: 10px;
+        }
+
+        .form-group {
+            padding-top: 10px;
+        }
+
+        label {
+            padding-top: 10px
+        }
+
+        .mybtn {
+            margin-top: 10px;
+            display: block;
+            width:500px;
+        }
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.')
+
+        }
+    </script>
+
+</head>
+<body>
+<div class="card" style="width: 500px;">
+    <img class="card-img-top"
+         src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MTRfMTQ3%2FMDAxNTg2ODU3MTM5NDIw.7dbsCAfnLTIkbu35Io_aXbkYjkpCcnpJEgVpVpi6Maog.lX5nuRcIfd9MjDScQbSWW5JPNJ76c8QMApC1HDNMNfgg.JPEG.ffcmc6537%2F%25C7%25CF%25B7%25E7%25C4%25AE%25B8%25B2%25B9%25D9_%25283%2529.JPG&type=b400"
+    >
+
+    <div class="text">
+        <h2>칼림바</h2>
+        <h5>가격: 55,000원</h5>
+        <p>엄지 손가락으로 오르골과 같은 영롱한 소리를 연주해보세요. </p>
+    </div>
+
+    <form class="form-inline">
+        <div class="info">
+            <h2>주문하기</h2>
+            <div class="form-group">
+                <label>주문자 성함:&nbsp&nbsp&nbsp</label>
+                <input type="text" class="form-control" id="order-name">
+            </div>
+
+            <div class="form-group">
+                <label>수량:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <select class="form-control" id="order-count">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>주소:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="text" class="form-control" id="order-address">
+            </div>
+
+            <div class="form-group">
+                <label>전화번호:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="text" class="form-control" id="order-phone">
+            </div>
+
+            <div class="order">
+                <button onclick="order()" type="button" class="btn btn-primary mybtn">주문하기</button>
+            </div>
+
+        </div>
+
+</body>
+</html>
