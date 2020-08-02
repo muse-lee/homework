@@ -9,6 +9,7 @@ soup = BeautifulSoup(data.text, 'html.parser')
 
 trs = soup.select('#body-content > div.newest-list > div > table > tbody > tr')
 # 아래 빈 칸('')을 채워보세요
+# 여기다!
 for tr in trs:
     rank = tr.select_one('tr:nth-child(1) > td.number').text[0:2].strip()
     title = tr.select_one('tr:nth-child(1) > td.info > a.title.ellipsis').text.strip()
